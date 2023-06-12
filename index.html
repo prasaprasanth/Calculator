@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <p style="font-size: 35px; color: black; text-align: center;">Simple Calculator</p>
+
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" readonly>
+      </div>
+      <div class="button-row">
+        <button class="operator" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="backspace()">&#8592;</button>
+        <button class="operator" onclick="insert('/')">÷</button>
+      </div>
+      <div class="button-row">
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button class="operator" onclick="insert('*')">×</button>
+      </div>
+      <div class="button-row">
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button class="operator" onclick="insert('-')">-</button>
+      </div>
+      <div class="button-row">
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button class="operator" onclick="insert('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button onclick="insert('0')">0</button>
+        <button onclick="insert('.')">.</button>
+        <button class="operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
